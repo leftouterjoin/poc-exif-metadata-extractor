@@ -1,0 +1,1 @@
+# poc-exif-metadata-extractor
