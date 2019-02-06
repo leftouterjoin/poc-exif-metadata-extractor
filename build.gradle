@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+tasks.eclipse.dependsOn(cleanEclipse)
+
+sourceCompatibility = targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: 'latest.release'
+    compile group: 'junit', name: 'junit', version:'latest.release'
+    compile group: 'org.hamcrest', name: 'hamcrest-library', version:'latest.release'
+    compile group: 'com.drewnoakes', name: 'metadata-extractor', version: 'latest.release'
+}
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+tasks.withType(Test) {
+  systemProperties System.properties
+}
+
