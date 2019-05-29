@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import com.drew.imaging.ImageMetadataReader;
 import com.drew.imaging.ImageProcessingException;

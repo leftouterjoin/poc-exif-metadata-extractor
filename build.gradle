@@ -14,6 +14,7 @@ dependencies {
     compile group: 'junit', name: 'junit', version:'latest.release'
     compile group: 'org.hamcrest', name: 'hamcrest-library', version:'latest.release'
     compile group: 'com.drewnoakes', name: 'metadata-extractor', version: 'latest.release'
+    compile group: 'com.opencsv', name: 'opencsv', version: 'latest.release'
 }
 
 compileJava.options.encoding = 'UTF-8'
